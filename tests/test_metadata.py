@@ -5,7 +5,7 @@
 #
 
 import json
-from oracc2csv.catalogue import OCatalogue
+from oracc2csv.metadata import OMetadata
 from pathlib import Path
 
 
@@ -17,3 +17,9 @@ class TestMetadata:
         del fp
         assert j["type"] == "metadata"
         assert j["project"] == "adsd"
+
+    def test_metadata_read(self):
+        whence = Path("tests/data/adsd")
+        c = OMetadata(whence)
+        assert c.json["type"] == "metadata"
+        assert c.json["project"] == "adsd"

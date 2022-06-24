@@ -1,3 +1,8 @@
+# This file is part of "oracc2csv"
+# by Tom Elliott
+# (c) Copyright 2022 by Tom Elliott
+# Licensed under the AGPL-3.0; see LICENSE.txt file.
+#
 import setuptools
 
 with open("README.md", "r") as fh:

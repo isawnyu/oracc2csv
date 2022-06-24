@@ -1,0 +1,46 @@
+{
+  "type": "portal",
+  "project": "adsd",
+  "source": "http://oracc.org/adsd",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-03-24T13:57:56",
+  "chunks": [
+    {
+      "type": "div",
+      "url": "adsd/index.html#innerContent",
+      "text": "Astronomical Diary -330 with an account of the battle of Gaugamela © The Trustees of the British Museum.     ADsD  offers an online edition of the Babylonian Astronomical Diaries, originally published in the series   Astronomical Diaries and Related texts from Babylonia  (ADART) prepared by Abraham Sachs and Hermann Hunger.    PROJECT COLLABORATORS    Reinhard Pirngruber, Maya Rinderer.   ADsD greatly benefitted from the generosity of Prof. Hermann Hunger, who put at our disposal his computer files of the original publication. We would also like to acknowledge the selfless technical support by Jamie Novotny and Nathan Morello.    SPONSOR   ADsD is an outcome of the research grant (P 30311)  Astronomical Diaries Digital  sponsored by the Austria Science Funds (FWF), carried out at the Austrian Academy of Sciences (Division: Austrian Centre for Digital Humanities) and led by Reinhard Pirngruber."
+    },
+    {
+      "type": "div",
+      "url": "adsd/index.html#Breadcrumb",
+      "text": "Home  » Introduction"
+    },
+    {
+      "type": "h1",
+      "url": "adsd/index.html#d2e143",
+      "text": "Introduction"
+    },
+    {
+      "type": "div",
+      "url": "adsd/index.html#innerContent",
+      "text": "The Astronomical Diaries (ADs) are a set of cuneiform tablets recording a variety of observed celestial, climatic, ecological, and economic phenomena, as well as giving accounts of historical events. They constitute one of the largest collections of observational data available from the Ancient World, consisting of more than 1,000 tablets and fragments dating from ca. 650-60 BCE. The texts are being published in an ongoing endeavor since the 1980s.   The ADs are a unique example of data gathering for the purpose of establishing an empirical basis for both astronomical and astrological prediction. The better part of the information contained usually relates to celestial – astronomical and meteorological – observations, and in particular to the position of the moon in the ecliptic during each night of a Babylonian lunar month. However, it has to be emphasized that the somewhat misleading term ‘Astronomical Diaries’ is the modern designation by their later editor A. Sachs, who was mainly interested in the astronomical content of the tablets. The more neutral Babylonian designation was  nasāru ša ginê , meaning “regular observation”. The astronomical section is usually followed by price quotations for foodstuffs and wool, and a note on the level of the river Euphrates. Often, a historical section is added. The ADs are indeed the single most important source for the political history of Late Achaemenid and Seleucid Babylonia. Among the historical accounts, the quite extensive report of the battle of Gaugamela and Alexander the Great’s subsequent entry into the city of Babylon has attracted particular attention (AD -330A+B), as has the description of preparatory measures preceding the First Syrian War between the Ptolemaic and the Seleucid Empires in 274/3 BCE (AD -273B).    This corpus, the largest coherent body of empirical data gathered in antiquity, is unique, and its importance can hardly be overrated. Available on Oracc are currently ADART volumes I - III. Publication of further volumes in in progress."
+    },
+    {
+      "type": "div",
+      "url": "adsd/index.html#Breadcrumb",
+      "text": "Home  » Bibliography"
+    },
+    {
+      "type": "h1",
+      "url": "adsd/index.html#d2e227",
+      "text": "Bibliography"
+    },
+    {
+      "type": "div",
+      "url": "adsd/index.html#innerContent",
+      "text": "SELECTIVE BIBLIOGRPAHY      EDITONS AND COPIES; COLLATIONS      ADART I = A. Sachs and H. Hunger, Astronomical Diaries and Related Texts from Babylonia. Volume I: 652-262 BC, Vienna: Verlag der Österreichischen Akademie der Wissenschaften 1988   ADART II = A. Sachs and H. Hunger, Astronomical Diaries and Related Texts from Babylonia. Volume II: 261-165 BC, Vienna: Verlag der Österreichischen Akademie der Wissenschaften 1989   ADART III = A. Sachs and H. Hunger, Astronomical Diaries and Related Texts from Babylonia. Volume III 164-61 BC, Vienna: Verlag der Österreichischen Akademie der Wissenschaften 1996   LBAT = T. G. Pinches et al., Late Babylonian Astronomical and Related Texts, Providence 1955    DEL MONTE, G. 1997:  Testi dalla Babilonia Ellenistica Vol. I: Testi cronografici . Pisa/Roma     GEORGE, A. R. 1997: 'The quarters of Babylon in the astronomical diaries'.  N.A.B.U.  1997/1/18    HUNGER, H. and R. J. VAN DER SPEK 2006: ‘An Astronomical Diary concerning Artaxerxes II.’ military operations in Babylonia’.  ARTA  2006.002: 1-16     MITSUMA, Y. 2013: 'Large wooden writing board mentioned in the Astronomcial Diary -213'  N.A.B.U.  2013/02/54     MITSUMA, Y. 2014: 'A new reading of the Astronomcial Diary -651 Col.iv 21'.  N.A.B.U.  2014/2/54     MITSUMA, Y. 2018: 'A New Attestation of Ardaya, the General of Babylonia under the Declining Seleucid Rule'.  ORIENT  53     PIRNGRUBER, R. 2014: 'A new Greek from Seleucid Babylonia?'  N.A.B.U.  2014/01/35     GENERAL    CLANCIER, P. 2009:  Les bibliothèques en Babylonie dans la deuxième moitié du Ier millènaire av. J.-C.  Alter Orient und Altes Testament 363. Münster: Ugarit-Verlag    HAUBOLD, J, J. STEELE and K. STEVENS 2019:  Keeping Watch in Babylon: The Astronomical Diaries in Context.  CHANE 100. Leiden and Boston: Brill    KOCH, J. 1991/92: ‘Zu einigen astronomischen ‘Diaries’’.  Archiv für Orientforschung  38/39: 101-109     MITSUMA, Y. 2015: 'From Preliminary Diaries to Short Diaries: The First and the Second Steps in the Compilation Process of the Late Babylonian Astronomical Diaries'.  SCIAMVS  16    OSSENDRIJVER, M. 2016: ‘Translating Babylonian Astronomical Diaries and Procedure Texts’. In A. Imhausen and T. Pommerening (eds.),  Translating Writings of Early Scholars in the Ancient Near East, Egypt, Greece and Rome. Methodological Aspects with Examples.  Beiträge zur Altertumskunde 344. Berlin/Munich/Boston: De Gruyter, pp. 125-172    PIRNGRUBER, R. 2013: ‘The historical sections of the Astronomical Diaries in context: developments in a Late Babylonian scientific text corpus.’  Iraq  75: 197-210    VAN DER SPEK, R. J. 1993: ‘The Astronomical Diaries as a Source for Achaemenid and Seleucid History.’  Bibliotheca Orientalis  50: 91-101     VAN DER SPEK, R. J. 1997/98: ‘New Evidence form the Babylonian Astronomical Diaries concerning Seleucid and Arsacid History.’  Archiv für Orientforschung  44/5: 167-175       ASTRONOMY    BROWN, D. 2000  Mesopotamian Planetary Astronomy-Astrology.  Cuneiform Monographs 18, Groningen: Styx    HUNGER, H. and D. PINGREE 1999:  Astral Sciences in Mesopotamia.  HdO I/XLIV, Leiden/Boston: Brill    ROCHBERG, F. 2004:  The Heavenly Writing. Divination, Horoscopy, and Astronomy in Mesopotamian Culture.  Cambridge University Press    SACHS, A. 1948 ‘A classification of the Babylonian Astronomical tablets of the Seleucid period.’  Journal of Cuneiform Studies  2: 271-290    METEOROLOGY AND CLIMATE    BROWN, D. 2002: ‘The level of the Euphrates’. In C. Wunsch (ed.),  Mining the Archives (Fs. C.Walker).  Babylonische Archive 1, Dresden. ISLET-Verlag, pp. 37-56    GRAßHOFF, G. 2010: ‘Babylonian meteorological observations and the empirical basis of ancient science’. In G. Selz and K. Wagensonner (eds.),  The Empirical Dimension of Ancient Near Eastern Studies.  Wiener Offene Orientalistik 6. Vienna: Institut für Orientalistik, pp. 33-49    ECONOMY    GRAINGER, J. D. 1999: ‘Prices in Hellenistic Babylonia’.  Journal of the Economic and Social History of the Orient  42.3: 303-325    PIRNGRUBER, R. 2017  The Economy of Late Achaemenid and Seleucid Babylonia.  Cambridge University Press     SLOTSKY, A. L. 1997:  The Bourse of Babylon. Market Quotations in the Astronomical Diaries of Babylonia.  Bethesda (MD): CDL press    TEMIN, P. 2002: ‘Price Behaviour in Ancient Babylon.’  Explorations in Economic History  39: 46-60    VAN DER SPEK, R. J. and C. MANDEMAKERS 2003: ‘Sense and Nonsense in the Statistical Approach of Babylonian Prices.’  Bibliotheca Orientalis  60: 521-537    VARGYAS, P. 2001:  A History of Babylonian Prices in the First Millennium BC. 1. Prices of Basic Commodities.  Heidelberger Studien zum Alten Orient 10. Heidelberg"
+    }
+  ]
+}

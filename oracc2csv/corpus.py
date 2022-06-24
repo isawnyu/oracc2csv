@@ -7,6 +7,7 @@
 Manage an ORACC corpus
 """
 
+from csv import DictWriter
 from oracc2csv.catalogue import OCatalogue
 from oracc2csv.metadata import OMetadata
 from pathlib import Path
@@ -69,6 +70,18 @@ class OCorpus:
     @property
     def source(self):
         return self.components["metadata"].source
+
+    def dump_csv(self, where: Path):
+        fieldnames = sorted(list(self.fieldnames))
+        fieldnames.insert(0, fieldnames.pop(fieldnames.index("id_text")))
+        with open(
+            where / f"{self.abbrev.lower()}.csv", "w", encoding="utf-8-sig"
+        ) as fp:
+            writer = DictWriter(fp, fieldnames=fieldnames)
+            writer.writeheader()
+            for m_data in self.components["catalogue"].json["members"].values():
+                writer.writerow(m_data)
+        del fp
 
     def __len__(self):
         return len(self.components["catalogue"])

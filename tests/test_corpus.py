@@ -6,6 +6,7 @@
 
 from pathlib import Path
 from oracc2csv.corpus import OCorpus
+from shutil import rmtree
 
 
 class TestCorpus:
@@ -53,3 +54,12 @@ class TestCorpus:
             "text_comments",
             "trans",
         }
+
+    def test_dump_csv(self):
+        whence = Path("tests/data/adsd")
+        corpus = OCorpus(whence)
+        where = "tests/data/scratch"
+        rmtree(where, ignore_errors=True)
+        where = Path(where)
+        where.mkdir(parents=True)
+        corpus.dump_csv(where)

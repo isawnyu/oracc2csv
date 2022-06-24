@@ -15,3 +15,12 @@ class OBase:
         with open(filepath, "r", encoding="utf-8") as fp:
             self.json = json.load(fp)
         del fp
+
+    def _attr_by_name(self, attrname):
+        _attrname = f"_{attrname}"
+        try:
+            return getattr(self, _attrname)
+        except AttributeError:
+            json_key = attrname.replace("_", "-")
+            setattr(self, _attrname, self.json[json_key])
+        return getattr(self, _attrname)

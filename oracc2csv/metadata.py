@@ -4,9 +4,20 @@
 # Licensed under the AGPL-3.0; see LICENSE.txt file.
 #
 """
-Python 3 package template (changeme)
+ORACC Metadata
 """
+import json
+from pathlib import Path
 
-import logging
 
-logger = logging.getLogger(__name__)
+class MetadataError(Exception):
+    def __init__(self, msg: str):
+        Exception.__init__(self, msg)
+
+
+class OMetadata:
+    def __init__(self, whence: Path):
+        filepath = whence / "metadata.json"
+        with open(filepath, "r", encoding="utf-8") as fp:
+            self.json = json.load(fp)
+        del fp

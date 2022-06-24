@@ -61,15 +61,6 @@ class OCatalogue(OBase):
     def type(self):
         return self._attr_by_name("type")
 
-    def _attr_by_name(self, attrname):
-        _attrname = f"_{attrname}"
-        try:
-            return getattr(self, _attrname)
-        except AttributeError:
-            json_key = attrname.replace("_", "-")
-            setattr(self, _attrname, self.json[json_key])
-        return getattr(self, _attrname)
-
     def __len__(self):
         try:
             return self._length

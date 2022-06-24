@@ -10,12 +10,34 @@ import json
 from pathlib import Path
 
 
+class CatalogueError(Exception):
+    def __init__(self, msg: str):
+        Exception.__init__(self, msg)
+
+
 class OCatalogue:
     def __init__(self, whence: Path):
         filepath = whence / "catalogue.json"
         with open(filepath, "r", encoding="utf-8") as fp:
             self.json = json.load(fp)
         del fp
+
+    @property
+    def fieldnames(self):
+        try:
+            return self._fieldnames
+        except AttributeError:
+            fn = set()
+            previous = None
+            for m_id, m_data in self.json["members"].items():
+                current = set(m_data.keys())
+                if previous is not None:
+                    if current != previous:
+                        CatalogueError("Fieldnames vary by member!")
+                fn.update(current)
+                previous = current
+            self._fieldnames = fn
+            return self._fieldnames
 
     @property
     def license(self):

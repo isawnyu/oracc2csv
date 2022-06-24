@@ -40,3 +40,34 @@ class TestCatalogue:
         whence = Path("tests/data/adsd")
         c = OCatalogue(whence)
         assert len(c) == 401
+
+    def test_fieldnames(self):
+        whence = Path("tests/data/adsd")
+        c = OCatalogue(whence)
+        assert c.fieldnames == {
+            "accession_no",
+            "ancient_year",
+            "bibilography",
+            "copy",
+            "date_bce",
+            "date_comments",
+            "designation",
+            "genre",
+            "id_text",
+            "langs",
+            "language",
+            "material",
+            "months_recorded",
+            "museum_no",
+            "object_type",
+            "period",
+            "photo",
+            "pleiades_coord",
+            "pleiades_id",
+            "project",
+            "provenience",
+            "supergenre",
+            "tablet_comments",
+            "text_comments",
+            "trans",
+        }

@@ -6,7 +6,7 @@
 """
 Catalogue
 """
-import json
+from oracc2csv.oracc_base import OBase
 from pathlib import Path
 
 
@@ -15,12 +15,10 @@ class CatalogueError(Exception):
         Exception.__init__(self, msg)
 
 
-class OCatalogue:
+class OCatalogue(OBase):
     def __init__(self, whence: Path):
         filepath = whence / "catalogue.json"
-        with open(filepath, "r", encoding="utf-8") as fp:
-            self.json = json.load(fp)
-        del fp
+        OBase.__init__(self, filepath)
 
     @property
     def fieldnames(self):

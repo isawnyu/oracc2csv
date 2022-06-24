@@ -28,3 +28,4 @@ class TestMetadata:
         whence = Path("tests/data/adsd")
         meta = OMetadata(whence)
         assert meta.type == "metadata"
+        assert meta.project == "adsd"

@@ -26,5 +26,9 @@ class OBase:
         return getattr(self, _attrname)
 
     @property
+    def project(self):
+        return self._attr_by_name("project")
+
+    @property
     def type(self):
         return self._attr_by_name("type")

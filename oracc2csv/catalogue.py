@@ -45,10 +45,6 @@ class OCatalogue(OBase):
         return tuple(result)
 
     @property
-    def project(self):
-        return self._attr_by_name("project")
-
-    @property
     def source(self):
         return self._attr_by_name("source")
 

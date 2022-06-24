@@ -6,7 +6,7 @@
 """
 ORACC Metadata
 """
-import json
+from oracc2csv.oracc_base import OBase
 from pathlib import Path
 
 
@@ -15,9 +15,7 @@ class MetadataError(Exception):
         Exception.__init__(self, msg)
 
 
-class OMetadata:
+class OMetadata(OBase):
     def __init__(self, whence: Path):
         filepath = whence / "metadata.json"
-        with open(filepath, "r", encoding="utf-8") as fp:
-            self.json = json.load(fp)
-        del fp
+        OBase.__init__(self, filepath)

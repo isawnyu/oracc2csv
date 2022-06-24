@@ -4,9 +4,15 @@
 # Licensed under the AGPL-3.0; see LICENSE.txt file.
 #
 """
-Python 3 package template (changeme)
+Catalogue
 """
+import json
+from pathlib import Path
 
-import logging
 
-logger = logging.getLogger(__name__)
+class OCatalogue:
+    def __init__(self, whence: Path):
+        filepath = whence / "catalogue.json"
+        with open(filepath, "r", encoding="utf-8") as fp:
+            self.json = json.load(fp)
+        del fp

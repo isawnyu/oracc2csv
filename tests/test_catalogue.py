@@ -5,6 +5,7 @@
 #
 
 import json
+from oracc2csv.catalogue import OCatalogue
 from pathlib import Path
 
 
@@ -16,3 +17,9 @@ class TestCatalogue:
         del fp
         assert j["type"] == "catalogue"
         assert j["project"] == "adsd"
+
+    def test_catalogue_read(self):
+        whence = Path("tests/data/adsd")
+        c = OCatalogue(whence)
+        assert c.json["type"] == "catalogue"
+        assert c.json["project"] == "adsd"

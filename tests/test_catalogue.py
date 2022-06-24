@@ -35,3 +35,8 @@ class TestCatalogue:
             "https://creativecommons.org/publicdomain/zero/1.0/",
         )
         assert c.timestamp == "2021-03-24T13:57:35Z"
+
+    def test_length(self):
+        whence = Path("tests/data/adsd")
+        c = OCatalogue(whence)
+        assert len(c) == 401

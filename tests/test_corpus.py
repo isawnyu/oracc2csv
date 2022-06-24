@@ -26,3 +26,30 @@ class TestCorpus:
         )
         assert corpus.name == "Astronomical Diaries Digital"
         assert len(corpus) == 401
+        assert corpus.fieldnames == {
+            "accession_no",
+            "ancient_year",
+            "bibilography",
+            "copy",
+            "date_bce",
+            "date_comments",
+            "designation",
+            "genre",
+            "id_text",
+            "langs",
+            "language",
+            "material",
+            "months_recorded",
+            "museum_no",
+            "object_type",
+            "period",
+            "photo",
+            "pleiades_coord",
+            "pleiades_id",
+            "project",
+            "provenience",
+            "supergenre",
+            "tablet_comments",
+            "text_comments",
+            "trans",
+        }

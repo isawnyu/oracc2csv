@@ -51,6 +51,10 @@ class OCorpus:
         return self.components["metadata"].description
 
     @property
+    def fieldnames(self):
+        return self.components["catalogue"].fieldnames
+
+    @property
     def license(self):
         return self.components["metadata"].license
 

@@ -29,3 +29,9 @@ class TestMetadata:
         meta = OMetadata(whence)
         assert meta.type == "metadata"
         assert meta.project == "adsd"
+        assert meta.source == "http://oracc.org/adsd"
+        assert meta.license == (
+            "This data is released under the CC0 license",
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+        )
+        assert meta.timestamp == "2021-03-24T13:58:01Z"

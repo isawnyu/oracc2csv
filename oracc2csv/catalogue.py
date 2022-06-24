@@ -37,22 +37,6 @@ class OCatalogue(OBase):
             self._fieldnames = fn
             return self._fieldnames
 
-    @property
-    def license(self):
-        result = list()
-        for attrname in ["license", "license_url"]:
-            result.append(self._attr_by_name(attrname))
-        return tuple(result)
-
-    @property
-    def source(self):
-        return self._attr_by_name("source")
-
-    @property
-    def timestamp(self):
-        ts = self._attr_by_name("UTC_timestamp")
-        return ts + "Z"
-
     def __len__(self):
         try:
             return self._length

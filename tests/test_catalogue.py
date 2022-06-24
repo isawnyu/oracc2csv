@@ -23,3 +23,15 @@ class TestCatalogue:
         c = OCatalogue(whence)
         assert c.json["type"] == "catalogue"
         assert c.json["project"] == "adsd"
+
+    def test_attributes(self):
+        whence = Path("tests/data/adsd")
+        c = OCatalogue(whence)
+        assert c.type == "catalogue"
+        assert c.project == "adsd"
+        assert c.source == "http://oracc.org/adsd"
+        assert c.license == (
+            "This data is released under the CC0 license",
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+        )
+        assert c.timestamp == "2021-03-24T13:57:35Z"

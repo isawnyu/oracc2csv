@@ -20,7 +20,7 @@ class CorpusIntegrityError(Exception):
 class OCorpus:
     def __init__(self, whence: Path):
         self.components = {
-            "catalog": OCatalogue(whence),
+            "catalogue": OCatalogue(whence),
             "metadata": OMetadata(whence),
         }
         self.check_integrity()
@@ -41,3 +41,30 @@ class OCorpus:
                         )
                 finally:
                     vals[attrname] = getattr(o, attrname)
+
+    @property
+    def abbrev(self):
+        return self.components["metadata"].abbrev
+
+    @property
+    def description(self):
+        return self.components["metadata"].description
+
+    @property
+    def license(self):
+        return self.components["metadata"].license
+
+    @property
+    def name(self):
+        return self.components["metadata"].name
+
+    @property
+    def project(self):
+        return self.components["metadata"].project
+
+    @property
+    def source(self):
+        return self.components["metadata"].source
+
+    def __len__(self):
+        return len(self.components["catalogue"])

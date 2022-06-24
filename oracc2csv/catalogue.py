@@ -57,10 +57,6 @@ class OCatalogue(OBase):
         ts = self._attr_by_name("UTC_timestamp")
         return ts + "Z"
 
-    @property
-    def type(self):
-        return self._attr_by_name("type")
-
     def __len__(self):
         try:
             return self._length

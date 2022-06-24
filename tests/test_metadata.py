@@ -20,6 +20,11 @@ class TestMetadata:
 
     def test_metadata_read(self):
         whence = Path("tests/data/adsd")
-        c = OMetadata(whence)
-        assert c.json["type"] == "metadata"
-        assert c.json["project"] == "adsd"
+        meta = OMetadata(whence)
+        assert meta.json["type"] == "metadata"
+        assert meta.json["project"] == "adsd"
+
+    def test_attributes(self):
+        whence = Path("tests/data/adsd")
+        meta = OMetadata(whence)
+        assert meta.type == "metadata"

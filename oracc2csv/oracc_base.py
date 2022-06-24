@@ -24,3 +24,7 @@ class OBase:
             json_key = attrname.replace("_", "-")
             setattr(self, _attrname, self.json[json_key])
         return getattr(self, _attrname)
+
+    @property
+    def type(self):
+        return self._attr_by_name("type")

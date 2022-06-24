@@ -35,3 +35,8 @@ class TestMetadata:
             "https://creativecommons.org/publicdomain/zero/1.0/",
         )
         assert meta.timestamp == "2021-03-24T13:58:01Z"
+        assert meta.abbrev == "ADsD"
+        assert meta.description.startswith(
+            "ADsD provides an online edition of the Babylonian Astronomical Diaries. The"
+        )
+        assert meta.name == "Astronomical Diaries Digital"

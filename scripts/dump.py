@@ -12,7 +12,7 @@ from oracc2csv.corpus import OCorpus
 import logging
 from pathlib import Path
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("oracc2csv")
 
 DEFAULT_LOG_LEVEL = logging.WARNING
 OPTIONAL_ARGUMENTS = [
@@ -48,7 +48,13 @@ def main(**kwargs):
     whence = Path(kwargs["source"]).expanduser().resolve()
     where = Path(kwargs["destination"]).expanduser().resolve()
     corpus = OCorpus(whence=whence)
-    logger.info(f"Loaded corpus from {whence}: {corpus.name} ({len(corpus)} entries)")
+    msg = [
+        f"Loaded corpus from {whence}:",
+        f"{corpus.abbrev}: {corpus.name}",
+        corpus.description,
+        f"{len(corpus)} entries",
+    ]
+    logger.info("\n".join(msg))
     corpus.dump_csv(where)
     logger.info(f"Wrote corpus to {where}")
 

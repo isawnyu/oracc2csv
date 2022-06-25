@@ -1,6 +1,6 @@
 # This file is part of "oracc2csv"
-# by Tom Elliott
-# (c) Copyright 2022 by Tom Elliott
+# by Tom Elliott for the Institute for the Study of the Ancient World (NYU)
+# (c) Copyright 2022 by New York University
 # Licensed under the AGPL-3.0; see LICENSE.txt file.
 #
 

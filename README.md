@@ -1,12 +1,15 @@
-# This file is part of "oracc2csv"
-# by Tom Elliott for the Institute for the Study of the Ancient World (NYU)
-# (c) Copyright 2022 by New York University
-# Licensed under the AGPL-3.0; see LICENSE.txt file.
-#
+<!--
+This file is part of "oracc2csv"
+by Tom Elliott for the Institute for the Study of the Ancient World (NYU)
+(c) Copyright 2022 by New York University
+Licensed under the AGPL-3.0; see LICENSE.txt file.
+-->
 
 # oracc2csv
 
-The Open Richly Annotated Cuneiform Corpus (ORACC) publishes JSON data for each of its projects. Sometimes you want the catalog data listing each text to be in CSV format. This package does that.
+The [Open Richly Annotated Cuneiform Corpus (ORACC)](http://oracc.museum.upenn.edu/) publishes JSON data for each of its projects. Sometimes you want the catalog data listing each text to be in CSV format. This package does that.
+
+This program was written by [Tom Elliott](https://orcid.org/0000-0002-4114-6677) for the [Institute for the Study of the Ancient World (NYU)](https://isaw.nyu.edu) and is Copyright 2022 by New York University. It is licensed under the GNU Affero General Public License (see LICENSE.txt).
 
 ## Install
 
@@ -18,7 +21,7 @@ pip install -U -r requirements_dev.txt
 
 ## Use
 
-Download the zip file of the ORACC project you're interested in (e.g., ). Run the oracc2csv `dump` script:
+Download the zip file of the ORACC project you're interested in (e.g., http://oracc.org/json/hbtin.zip). Run the oracc2csv `dump` script:
 
 ```
 > python scripts/dump.py -v ~/oracc/hbtin ~/scratch
